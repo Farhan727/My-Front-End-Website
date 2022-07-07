@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+
+footer {
+    background:darkgray;
+}
+.four-columns-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+    gap: 3rem;
+}
+.container {
+
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 9rem 0;
+}

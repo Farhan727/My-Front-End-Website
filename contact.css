@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Work+Sans:wght@400;500&display=swap');
+
+  *{
+      box-sizing: border-box;
+      margin: 0px;
+      padding: 0px;
+      font-family: 'Poppins',sans-serif;
+      font-family: 'Work Sans', sans-serif;
+  }
+  
+  /*css varibales creation and these are very useful to create */
+  :root{
+  
+      --heading-color:rgb(0,10,45);
+      --para-color:#777;
+      --para-tint:#e4e4e4;
+      --white:#fff;
+      --dark-color:#212529;
+      --helper:rgb(62, 80, 241);
+      --helper-tint:#f3f4ff;
+      --bg:rgb(215, 215, 236);
+      --gradient:liner-gradient(0deg,rgb(61, 35, 204) 0%, rgb(39, 126, 240) 100%);
+      --gradient-support: -webkit-linear-gradient(
+          0deg,
+          rgb(97, 23, 214) 0%, 
+          rgb(81, 130, 236) 100%
+      );
+  
+      --shadow: 0px 0px 20px 0px rgb(132 144 255 / 20%);
+      --shadow-support: 0px 0px 20px 0px rgb(132 144 255 / 30%);
+  }
+  
+  html {
+  
+      font-size: 62.5%;
+  }
+  h1,h2,h3,h4 {
+       
+      font-family: 'Poppins', sans-serif;
+      font-family: 'Work Sans', sans-serif;
+  }
+  h1 {
+      color: var(--heading-color);
+      font-size: 6rem;
+      font-weight: 600;
+  }
+  h3 {
+      font-size: 1.8rem;
+      font-weight: 400;
+  }
+  p {
+      color: var(--para-color);
+      line-height: 1.6;
+      font-size: 1.7rem;
+  }
+  a{
+      text-decoration: none;
+  }
+  ul{
+      list-style: none;
+  }
+  header{
+      background-color:var(--bg);
+  }
+  .logo h1 {
+      
+      margin-left: 20px;
+  }
+  .header-section {
+  
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+  }
+  .navigation-list {
+      display: flex;
+      gap: 4.8rem;
+  }
+  nav{
+      
+      margin-left: auto;
+  }
+  .navigation-list li:last-child{
+      margin-right: 20px;
+  }
+  .navigation-list li a {
+  
+      font-size: 1.5rem;
+      font-weight: 700;
+      color:var(--dark-color);
+      transition: all .3s linear;
+      /*font-family: 'Poppins', sans-serif;*/
+  }
+  
+  .navbar-link:hover {
+  
+      color: var(--helper);
+      
+  }
+
+  .section {
+    padding: 9rem 0px;
+    margin:0 auto;
+}
+
+/*pre-defined code for re-usability and useful to reduce same code here for 2 columns*/
+.grid-two-columns { 
+    display: grid;
+    gap: 9rem;
+    grid-template-columns:repeat(2,1fr);
+    align-items: center;
+    justify-content: center;
+}
+
+/*pre-defined code for re-usability and useful to reduce same code here for 3 columns*/
+.grid-three-columns{
+
+    display: grid;
+    gap: 9rem;
+    grid-template-columns:repeat(3,1fr);
+    align-items: center;
+    justify-content: center;
+
+}
+
+/*pre-defined code for re-usability and useful to reduce same code here for 4 columns*/
+.grid-four-columns{
+
+    display: grid;
+    gap: 9rem;
+    grid-template-columns:repeat(4,1fr);
+    align-items: center;
+    justify-content: center;
+
+}
+
+.btn {
+    
+    background-image:var(--gradient-support);
+    padding: 1.6rem 3.2rem;
+    border: none;
+    color:var(--helper-tint);
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+.btn:hover {
+    box-shadow:0px 0px 50px 5px rgba(238, 11, 11, 0.3);
+}
+
+.common-heading {
+    font-size: 4.8rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    position: relative;     /* why to remove this property our blue line goes to right side. i want some guide here */ 
+}
+.common-heading::before{
+    content:"";
+    position:absolute;
+    top: 110%;
+    left: 0;
+    height:1.5rem ;
+    width:1.5rem ;
+    background-color: var(--helper);
+    border-radius: 1.5rem;
+}
+.common-heading::after{
+    content:"";
+    position:absolute;
+    top: 122%;
+    left: 1.5rem;
+    min-width: 200px;
+    height: 0.3rem;
+    background-color: var(--helper);
+}
+.bio-heading-only{
+
+    margin-bottom:3rem;
+}
+
+/*==============================================================
+                  
+           Contact Us Section Starting from Here... 
+    
+================================================================= */
+
+
+.contact-us-section .common-heading {
+    margin-bottom: 5rem;
+    
+}
+
+.contact-us-section{
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: 9rem;
+    transition: all 0.7s linear;   
+}
+.section-contact-main form {
+
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+.map {
+    width: 100%;
+}
+.section-contact-main input , .section-contact-main textarea {
+
+    padding: 1.3rem 2rem;
+    border: 0.3px solid #c9c9c9;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    font-family: "Work Sans";
+    width: 100%;
+    outline-style: none;
+
+}
+.section-contact-main input[type="submit"] {
+
+    width: 30%;
+    border: none;
+}
+.section-contact-main .grid-two-columns {
+
+    gap: 2rem;
+}
+
+

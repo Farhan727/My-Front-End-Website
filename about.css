@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Work+Sans:wght@400;500&display=swap');
+
+  *{
+      box-sizing: border-box;
+      margin: 0px;
+      padding: 0px;
+      font-family: 'Poppins',sans-serif;
+      font-family: 'Work Sans', sans-serif;
+  }
+  
+  /*css varibales creation and these are very useful to create */
+  :root{
+  
+      --heading-color:rgb(0,10,45);
+      --para-color:#777;
+      --para-tint:#e4e4e4;
+      --white:#fff;
+      --dark-color:#212529;
+      --helper:rgb(62, 80, 241);
+      --helper-tint:#f3f4ff;
+      --bg:rgb(215, 215, 236);
+      --gradient:liner-gradient(0deg,rgb(61, 35, 204) 0%, rgb(39, 126, 240) 100%);
+      --gradient-support: -webkit-linear-gradient(
+          0deg,
+          rgb(97, 23, 214) 0%, 
+          rgb(81, 130, 236) 100%
+      );
+  
+      --shadow: 0px 0px 20px 0px rgb(132 144 255 / 20%);
+      --shadow-support: 0px 0px 20px 0px rgb(132 144 255 / 30%);
+  }
+  
+  html {
+  
+      font-size: 62.5%;
+  }
+  h1,h2,h3,h4 {
+       
+      font-family: 'Poppins', sans-serif;
+      font-family: 'Work Sans', sans-serif;
+  }
+  h1 {
+      color: var(--heading-color);
+      font-size: 6rem;
+      font-weight: 600;
+  }
+  h3 {
+      font-size: 1.8rem;
+      font-weight: 400;
+  }
+  p {
+      color: var(--para-color);
+      line-height: 1.6;
+      font-size: 1.7rem;
+  }
+  a{
+      text-decoration: none;
+  }
+  ul{
+      list-style: none;
+  }
+  header{
+      background-color:var(--bg);
+  }
+  .logo h1 {
+      
+      margin-left: 20px;
+  }
+  .header-section {
+  
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+  }
+  .navigation-list {
+      display: flex;
+      gap: 4.8rem;
+  }
+  nav{
+      
+      margin-left: auto;
+  }
+  .navigation-list li:last-child{
+      margin-right: 20px;
+  }
+  .navigation-list li a {
+  
+      font-size: 1.5rem;
+      font-weight: 700;
+      color:var(--dark-color);
+      transition: all .3s linear;
+      /*font-family: 'Poppins', sans-serif;*/
+  }
+  
+  .navbar-link:hover {
+  
+      color: var(--helper);
+      
+  }
+
+  .section {
+    padding: 9rem 0px;
+    margin:0 auto;
+}
+
+/*pre-defined code for re-usability and useful to reduce same code here for 2 columns*/
+.grid-two-columns { 
+    display: grid;
+    gap: 9rem;
+    grid-template-columns:repeat(2,1fr);
+    align-items: center;
+    justify-content: center;
+}
+
+/*pre-defined code for re-usability and useful to reduce same code here for 3 columns*/
+.grid-three-columns{
+
+    display: grid;
+    gap: 9rem;
+    grid-template-columns:repeat(3,1fr);
+    align-items: center;
+    justify-content: center;
+
+}
+
+/*pre-defined code for re-usability and useful to reduce same code here for 4 columns*/
+.grid-four-columns{
+
+    display: grid;
+    gap: 9rem;
+    grid-template-columns:repeat(4,1fr);
+    align-items: center;
+    justify-content: center;
+
+}
+
+.btn {
+    
+    background-image:var(--gradient-support);
+    padding: 1.6rem 3.2rem;
+    border: none;
+    color:var(--helper-tint);
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+.btn:hover {
+    box-shadow:0px 0px 50px 5px rgba(238, 11, 11, 0.3);
+}
+
+.common-heading {
+    font-size: 4.8rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    position: relative;     /* why to remove this property our blue line goes to right side. i want some guide here */ 
+}
+.common-heading::before{
+    content:"";
+    position:absolute;
+    top: 110%;
+    left: 0;
+    height:1.5rem ;
+    width:1.5rem ;
+    background-color: var(--helper);
+    border-radius: 1.5rem;
+}
+.common-heading::after{
+    content:"";
+    position:absolute;
+    top: 122%;
+    left: 1.5rem;
+    min-width: 200px;
+    height: 0.3rem;
+    background-color: var(--helper);
+}
+.bio-heading-only{
+
+    margin-bottom:3rem;
+}
+
+/*==============================================================
+                  
+                     Footer Section Starting from Here... 
+    
+================================================================= */
+
+.footer-section {
+    background-color: var(--heading-color);
+}
+
+.footer-section .grid-four-columns {
+
+    max-width:  900px;
+    margin: 0 auto;
+    margin-top: 9rem;
+    margin-bottom: 9rem;
+    transition: all 0.7s linear;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items:center;
+}
+.footer-section h3 {
+
+    color: var(--white);
+    margin-bottom: 4rem;
+}
+.footer-section p{
+
+    color: #adadad;
+}
+.footer-links ul , .footer-services ul, .footer-questions address {
+    
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    justify-content: center;
+      
+}
+.footer-links li , .footer-links a, .footer-services li, .footer-services a {
+    
+    font-size: 1rem;
+    color: #adadad;
+    text-transform: capitalize;
+}
+.footer-about h3, .footer-questions h3 {
+    margin-top: 1rem;
+}
+.footer-section i {
+    margin-right: 5px;
+}
+.footer-questions p, .footer-questions p a {
+    color: #adadad;
+    font-style: normal;
+}
+
+.footer-social-icons {
+    margin: 5rem 0;
+    text-align: center;
+    color: #adadad;
+}
+.footer-social-icons a i {
+    
+    font-size: 3rem;
+    padding: 1rem;
+    display:inline-block;
+    animation: water-wave 3s linear infinite;
+    position: relative;
+    color: var(--bg);
+
+
+}
+.footer-social-icons .footer-credits {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding-bottom: 1rem;
+}
+.footer-section a:hover {
+    color: var(--white);
+}
+
+
+/* <!--==============================================================
+                  
+                 Bio Data section and about us section
+
+  ================================================================--> */
+
+
+  
+  /*About Sectio Styling */
+ 
+  .left-hero-content {
+  
+      margin-left: 13rem;
+      
+  
+  }
+  .left-hero-content h4 {
+      font-weight: 1000;
+      margin-left: 3px;
+      font-size: 2rem;
+      color: var(--helper);
+  }
+  .left-hero-content h1 {
+      
+      margin-bottom: 2rem;
+      font-weight: 700;
+      font-size: 6.4rem;
+  }
+  .left-hero-content p {
+     margin-bottom: 1.5rem;
+     max-width: 600px;
+     color: var(--para-color);
+  
+  }
+  .hero-image img {
+      max-width: 100%;
+  }
+  /* .hero-section {
+  
+      display: flex;
+      background-color: var(--bg);
+      align-items: center;
+      justify-content:center;
+  }
+  .left-hero-content {
+      margin-left: 200px;
+      margin-right:70px;
+  }
+  .hero-image {
+      margin-right: 150px;
+  } */
+  
+  
+  /*pre-defined code for re-usability and useful to reduce same code here for creating buttons same nature*/
+  .btn {
+      
+      background-image:var(--gradient-support);
+      padding: 1.6rem 3.2rem;
+      border: none;
+      color:var(--helper-tint);
+      text-transform: uppercase;
+      font-size: 1.8rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all .4s ease;
+  }
+  .btn:hover {
+      box-shadow:0px 0px 50px 5px rgba(238, 11, 11, 0.3);
+  }
+  .bio-data {
+  
+      background-color: var(--white);
+  }
+
+.left-side-image img{
+
+    max-width: 80%;
+    box-shadow: -2rem -2rem 0 0 var(--helper);
+}
+.left-side-image{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right-side-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*pre-defined code for re-usability and useful to reduce same code here for headings purpose*/
+.common-heading {
+    font-size: 4.8rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    position: relative;     /* why to remove this property our blue line goes to right side. i want some guide here */ 
+}
+.common-heading::before{
+    content:"";
+    position:absolute;
+    top: 110%;
+    left: 0;
+    height:1.5rem ;
+    width:1.5rem ;
+    background-color: var(--helper);
+    border-radius: 1.5rem;
+}
+.common-heading::after{
+    content:"";
+    position:absolute;
+    top: 122%;
+    left: 1.5rem;
+    min-width: 200px;
+    height: 0.3rem;
+    background-color: var(--helper);
+}
+.bio-data-stats {
+
+    display: flex;
+    padding: 6.4rem 0px;
+    flex-direction: column;
+    gap: 5rem;
+
+}
+.bio-btn{
+    margin-top:6.4rem;
+}
+.bio-progress-bar {
+
+    width: 90%;
+    height: 0.8rem;
+    background-color: var(--para-tint);
+    border-radius: 10rem;
+    position: relative;
+}
+.bio-stats h3 {
+    margin-bottom: 10px;
+}
+.bio-progress-bar::before{
+
+    content: "";
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: inherit;
+    background-image:var(--gradient-support);
+    border-radius: 10rem;
+
+}
+.bio-progress-1{
+    width: 80%;
+}
+
+.bio-progress-2::before{
+    width: 90%;
+}
+.bio-progress-3::before{
+    width: 60%;
+}
+.bio-progress-4::before{
+    width: 50%;
+}
+.bio-progress-5::before{
+    width: 40%;
+}
+.bio-progress-bar span{
+    position: absolute;
+    top:1.8rem;
+    width: 4rem;
+    height: 2rem;
+    background: var(--helper);
+    color:var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+}
+.bio-progress-1 span{
+    left: 76%;
+}
+.bio-progress-2 span{
+    left: 86%;
+}
+.bio-progress-3 span{
+    left: 56% ;
+}
+.bio-progress-4 span{
+    left: 46% ;
+}
+.bio-progress-5 span{
+    left: 36% ;
+}
+
+/* creation of carrat/
+trick is that we have to create *
+four (4) boxes and them border on each side
+and then give width and height zero (0) that will cause append them with each other.
+and we have to show only top side of box and other sides (bottom, left, right) will be transparent*/
+
+.bio-progress-bar span::after{
+
+     content:"";
+     position: absolute;
+     width: 0px;
+     height: 0px;
+     border: 0.8rem solid var(--helper);
+     border-color:transparent ;
+     border-bottom-color:var(--helper);
+     top: -1.5rem;
+    
+}
+.bio-heading-only{
+
+    margin-bottom:3rem;
+}

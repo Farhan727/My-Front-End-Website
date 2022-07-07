@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Work+Sans:wght@400;500&display=swap');
+
+  *{
+      box-sizing: border-box;
+      margin: 0px;
+      padding: 0px;
+      font-family: 'Poppins',sans-serif;
+      font-family: 'Work Sans', sans-serif;
+  }
+  
+  /*css varibales creation and these are very useful to create */
+  :root{
+  
+      --heading-color:rgb(0,10,45);
+      --para-color:#777;
+      --para-tint:#e4e4e4;
+      --white:#fff;
+      --dark-color:#212529;
+      --helper:rgb(62, 80, 241);
+      --helper-tint:#f3f4ff;
+      --bg:rgb(215, 215, 236);
+      --gradient:liner-gradient(0deg,rgb(61, 35, 204) 0%, rgb(39, 126, 240) 100%);
+      --gradient-support: -webkit-linear-gradient(
+          0deg,
+          rgb(97, 23, 214) 0%, 
+          rgb(81, 130, 236) 100%
+      );
+  
+      --shadow: 0px 0px 20px 0px rgb(132 144 255 / 20%);
+      --shadow-support: 0px 0px 20px 0px rgb(132 144 255 / 30%);
+  }
+  
+  html {
+  
+      font-size: 62.5%;
+  }
+  h1,h2,h3,h4 {
+       
+      font-family: 'Poppins', sans-serif;
+      font-family: 'Work Sans', sans-serif;
+  }
+  h1 {
+      color: var(--heading-color);
+      font-size: 6rem;
+      font-weight: 600;
+  }
+  h3 {
+      font-size: 1.8rem;
+      font-weight: 400;
+  }
+  p {
+      color: var(--para-color);
+      line-height: 1.6;
+      font-size: 1.7rem;
+  }
+  a{
+      text-decoration: none;
+  }
+  ul{
+      list-style: none;
+  }
+  header{
+      background-color:var(--bg);
+  }
+  .logo h1 {
+      
+      margin-left: 20px;
+  }
+  .header-section {
+  
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+  }
+  .navigation-list {
+      display: flex;
+      gap: 4.8rem;
+  }
+  nav{
+      
+      margin-left: auto;
+  }
+  .navigation-list li:last-child{
+      margin-right: 20px;
+  }
+  .navigation-list li a {
+  
+      font-size: 1.5rem;
+      font-weight: 700;
+      color:var(--dark-color);
+      transition: all .3s linear;
+      /*font-family: 'Poppins', sans-serif;*/
+  }
+  
+  .navbar-link:hover {
+  
+      color: var(--helper);
+      
+  }
+
+  .section {
+    padding: 9rem 0px;
+    margin:0 auto;
+}
+
+/*pre-defined code for re-usability and useful to reduce same code here for 2 columns*/
+.grid-two-columns { 
+    display: grid;
+    gap: 9rem;
+    grid-template-columns:repeat(2,1fr);
+    align-items: center;
+    justify-content: center;
+}
+
+/*pre-defined code for re-usability and useful to reduce same code here for 3 columns*/
+.grid-three-columns{
+
+    display: grid;
+    gap: 9rem;
+    grid-template-columns:repeat(3,1fr);
+    align-items: center;
+    justify-content: center;
+
+}
+
+/*pre-defined code for re-usability and useful to reduce same code here for 4 columns*/
+.grid-four-columns{
+
+    display: grid;
+    gap: 9rem;
+    grid-template-columns:repeat(4,1fr);
+    align-items: center;
+    justify-content: center;
+
+}
+
+.btn {
+    
+    background-image:var(--gradient-support);
+    padding: 1.6rem 3.2rem;
+    border: none;
+    color:var(--helper-tint);
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+.btn:hover {
+    box-shadow:0px 0px 50px 5px rgba(238, 11, 11, 0.3);
+}
+
+.common-heading {
+    font-size: 4.8rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    position: relative;     /* why to remove this property our blue line goes to right side. i want some guide here */ 
+}
+.common-heading::before{
+    content:"";
+    position:absolute;
+    top: 110%;
+    left: 0;
+    height:1.5rem ;
+    width:1.5rem ;
+    background-color: var(--helper);
+    border-radius: 1.5rem;
+}
+.common-heading::after{
+    content:"";
+    position:absolute;
+    top: 122%;
+    left: 1.5rem;
+    min-width: 200px;
+    height: 0.3rem;
+    background-color: var(--helper);
+}
+.bio-heading-only{
+
+    margin-bottom:3rem;
+}
+
+
+/*==============================================================
+                  
+                     Services Section Starting from Here... 
+    
+================================================================= */
+
+.services-section {
+    transition: all 0.7s linear;
+}
+.services-section p {
+    max-width: 60rem;
+}
+.cards-container {
+    margin-top: 10rem;
+    gap: 10rem;
+   
+}
+.cards-container p {
+    text-align: justify;
+}
+.service-card {
+    text-align: center;
+    box-shadow: var(--shadow-support);
+    border-radius: 5px;
+    padding: 6rem 4rem;
+    transition: all 0.7s linear;
+}
+.service-card h3 {
+    text-transform: uppercase;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+.service-card:hover {
+    transform: translateY(-3rem);
+}
+.service-card i {
+    width: 8rem;
+    height: 8rem;
+    background-color:rgb(49, 48, 48);
+    border-radius: 100% 0% 100% 0% / 0% 45% 55% 100% ;
+    display: inline-block;
+    padding: 2.5rem 2rem;
+    color: var(--heading-color);
+    position: relative;
+    animation: water-wave 3s linear infinite;
+}
+@keyframes water-wave {
+
+    0% {
+
+        border-radius: 10% 0% 100% 0% / 0% 45% 55% 10% ;
+    }
+    50% {
+
+        border-radius: 13% 100% 10% 50% / 10% 45% 48% 10% ;
+    }
+    100% {
+        
+        border-radius: 10% 50% 23% 0% / 0% 45% 55% 10% ;
+    }
+
+    
+}
+
+         /* 
+         <--==============================================================
+                  
+                  Our Services Section Starting from Here....
+
+        ================================================================-->
+      */
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+        margin-top: 9rem;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+      }
+    .swiper-client-msg {
+
+        padding: 5rem 8rem;
+        background-color: var(--white);
+        border-radius: 1rem;
+        text-align: left;
+        box-shadow: var(--shadow-support);
+        position: relative;
+    }
+.swiper-slide img {
+
+        max-width: 10rem;
+        height: 10rem;
+        border-radius: 50%;
+        border: .5rem solid var(--helper-tint);
+    }
+
+    .swiper-client-msg::before {
+
+        content:"";
+        position: absolute;
+        bottom: -10rem;
+        left: 50%;
+        transform: translateX(-50%);
+        border: 5rem solid var(--white);
+        border-color: transparent;
+        border-top-color: var(--helper-tint);
+    }
+    
+    .swiper-clients-data {
+
+        align-items: center;
+        margin-top: 1.3rem;
+        gap: 3.2rem;
+    }
+   
+    .swiper-client-msg p::before{
+
+        content: "\f10d";
+        position: absolute;
+        top: 0;
+        left: 2rem;
+        font-size: 5rem;
+        color: #ced3ff;
+        font-weight: 900;
+        font-family: "Font Awesome 6 Free";
+
+    }
+
+    .swiper-client-msg p::after{
+
+        content: "\f10e";
+        position: absolute;
+        bottom: 0;
+        right: 3rem;
+        font-size: 5rem;
+        color: #ced3ff;
+        font-weight: 900;
+        font-family: "Font Awesome 6 Free";
+}
+
+/*==============================================================
+                  
+                     Footer Section Starting from Here... 
+    
+================================================================= */
+
+.footer-section {
+    background-color: var(--heading-color);
+}
+
+.footer-section .grid-four-columns {
+
+    max-width:  900px;
+    margin: 0 auto;
+    margin-top: 9rem;
+    margin-bottom: 9rem;
+    transition: all 0.7s linear;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items:center;
+}
+.footer-section h3 {
+
+    color: var(--white);
+    margin-bottom: 4rem;
+}
+.footer-section p{
+
+    color: #adadad;
+}
+.footer-links ul , .footer-services ul, .footer-questions address {
+    
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    justify-content: center;
+      
+}
+.footer-links li , .footer-links a, .footer-services li, .footer-services a {
+    
+    font-size: 1rem;
+    color: #adadad;
+    text-transform: capitalize;
+}
+.footer-about h3, .footer-questions h3 {
+    margin-top: 1rem;
+}
+.footer-section i {
+    margin-right: 5px;
+}
+.footer-questions p, .footer-questions p a {
+    color: #adadad;
+    font-style: normal;
+}
+
+.footer-social-icons {
+    margin: 5rem 0;
+    text-align: center;
+    color: #adadad;
+}
+.footer-social-icons a i {
+    
+    font-size: 3rem;
+    padding: 1rem;
+    display:inline-block;
+    animation: water-wave 3s linear infinite;
+    position: relative;
+    color: var(--bg);
+
+}
+.footer-social-icons .footer-credits {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding-bottom: 1rem;
+}
+.footer-section a:hover {
+    color: var(--white);
+}

@@ -1,0 +1,849 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width">
+    <meta name="X-UA-Compitable" content="ie-edge">
+    <title>My Project Navbar</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="C:\Users\Admin\Desktop\My Web Menia\fontawesome-free-6.1.1-web\fontawesome-free-6.1.1-web\css\all.css">
+    <link rel="stylesheet" href="Project.css"> <!--Project Navbar CSS file-->
+    <script defer src="Project_JavaScript_Code.js"></script> <!--use 'defer' keyword its advantage is that when our html page is loading our JS code also automatically loading ,it js code fast to load and run-->
+
+</head>
+
+     <body>
+
+        <header>
+
+            <div class="header-section"> <!--header section part-->
+            <div class="logo"> <!--logo part-->
+                <h1>Company logo</h1>
+            </div> <!--logo part-->
+
+            <nav class="navigation-menu"> <!--Navigation links part-->
+
+                <ul class="navigation-list"> 
+
+                    <li><a href="#" class="navbar-link home-link">HOME</a></li>
+                    <li><a href="/about.html" class="navbar-link about-link">ABOUT</a></li>
+                    <li><a href="/services.html" class="navbar-link services-link">SERVICES</a></li>
+                    <li><a href="#" class="navbar-link portfolio-link">PORTFOLIO</a></li>
+                    <li><a href="#" class="navbar-link contact-link">CONTACT</a></li>
+
+                </ul>
+
+            </nav> <!--Navigation links part-->
+
+            </div> <!--header+navigation part-->
+
+        </header>
+
+        
+        <!--==============================================================
+                  
+                     Hero Section means Profile Setting
+    
+        ================================================================-->
+
+        <section class="hero-section section grid-two-columns"> <!--Hero Section Starts-->
+
+           <div class="left-hero-content"><!--left side of intro to profile start-->
+
+            <h4>I'M</h4>
+            <h1>Farhan Ali</h1>
+            <p>My name is Farhan Ali from Sialkot,Pakistan And work as a web developer in high rating companies and clients.</p>
+            <button class="hero-btn btn">See More</button>
+
+        </div> <!--left side of intro to profile end-->
+
+        <div class="hero-image">
+            <img src="C:\Users\Admin\Desktop\My Web Menia\images\farhanPic.jpg" alt="This is Farhan Ali Image">
+
+        </div>
+
+
+        </section> <!--Hero Section ends-->
+
+        <!--==============================================================
+                  
+                     Bio Data section and about us section
+    
+        ================================================================-->
+
+        <section class="bio-data grid-two-columns section">
+
+            <div class="left-side-image"> <!--left-side-image part start-->
+
+                <img src="C:\Users\Admin\Desktop\My Web Menia\images\side.jpg" alt="">
+
+            </div> <!--left-side-image part end-->
+
+            <div class="right-side-data"> <!--left-side-data part start-->
+                <h2 class="common-heading bio-heading-only">My Bio-Data</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ipsam alias dolores eos esse sunt, nulla officiis assumenda. Explicabo vero saepe distinctio minus eveniet quidem enim voluptas, numquam fugit eum.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae necessitatibus voluptas vitae facere consequuntur. Impedit voluptatum voluptatibus.</p>
+
+                <div class="bio-data-stats"> <!--bio-data-stats-->
+
+                    <div class="bio-stats"> <!--bio-stats-->
+
+                        <h3>Design</h3>
+
+                        <div class="bio-progress-bar bio-progress-1"> <!--bio-progress-bar-->
+
+                            <span>80%</span>
+
+                        </div> <!--bio-progress-bar-->
+
+                    </div> <!--bio-stats end-->
+
+                    <div class="bio-stats"> <!--bio-stats-->
+
+                        <h3>HTML</h3>
+
+                        <div class="bio-progress-bar bio-progress-2"> <!--bio-progress-bar-->
+
+                            <span>99%</span>
+                            
+                        </div> <!--bio-progress-bar-->
+
+                    </div> <!--bio-stats end-->
+
+                    <div class="bio-stats"> <!--bio-stats-->
+
+                        <h3>Apps</h3>
+
+                        <div class="bio-progress-bar bio-progress-3"> <!--bio-progress-bar-->
+
+                            <span>88%</span>
+                            
+                        </div> <!--bio-progress-bar-->
+
+                    </div> <!--bio-stats end-->
+
+                    <div class="bio-stats"> <!--bio-stats-->
+
+                        <h3>JavaScript</h3>
+
+                        <div class="bio-progress-bar bio-progress-4"> <!--bio-progress-bar-->
+
+                            <span>60%</span>
+                            
+                        </div> <!--bio-progress-bar-->
+
+                    </div> <!--bio-stats end-->
+
+                    <div class="bio-stats"> <!--bio-stats-->
+
+                        <h3>Java</h3>
+
+                        <div class="bio-progress-bar bio-progress-5"> <!--bio-progress-bar-->
+
+                            <span>50%</span>
+                            
+                        </div> <!--bio-progress-bar-->
+
+                        <button class="bio-btn btn">Download</button>
+
+                    </div> <!--bio-stats end-->
+
+
+                </div> <!--bio-data-stats end-->
+
+            </div> <!--left-side-data part end-->
+
+        </section> <!--End of section bio-data-->
+
+
+         <!--==============================================================
+                  
+                     Portfolio Section Starting from Here... 
+    
+        ================================================================-->
+        
+        <section class="portfolio-section section"> <!--Portfolio Section Start-->
+
+            <div class="container"> <!--Container class start-->
+
+            <h2 class="common-heading bio-heading-only">Latest Work</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et esse repellat mollitia explicabo alias error odio quas tenetur corrupti necessitatibus.</p>
+            
+         </div> <!--Container class end-->
+
+         <div class="p-btns"> <!--parent-btns start-->
+
+            <!--we can make own attributes that the html provides us by simply using word data hiphen such as data-btn-number the purpose is that we can get this data  hiphen attribute using DOM quickly and easily.
+            we are giving numbering to buttons for very special purpose-->
+
+            <div class="btn p-btn" data-btn-number="1">Websites</div>
+            <div class="btn p-btn" data-btn-number="2">YouTube</div>
+            <div class="btn p-btn" data-btn-number="3">Designs</div>
+           
+          </div> <!--parent-btns end-->
+
+          <div class="container grid grid-three-columns portfolio-images "> <!--portfolio-images div start-->
+
+            <div class="image-overlay p-btn--1 portfolio-image-not-active "> <!--image-overlay div start-->
+
+                <img src="C:\Users\Admin\Desktop\My Web Menia\images\project-1.jpg" alt="This is Farhan Ali Image">
+
+                <div class="overlay"> <!--overly div start-->
+                    <a href="C:\Users\Admin\Desktop\My Web Menia\images\project-2.jpg" target="_blank" class="common-heading">Project 1</a>
+
+                </div> <!--overly div end-->
+
+
+            </div>  <!--image-overlay div end-->
+
+            <div class="image-overlay p-btn--2"> <!--image-overlay div start-->
+
+                <img src="C:\Users\Admin\Desktop\My Web Menia\images\project-3.jpg" alt="This is Farhan Ali Image">
+
+                <div class="overlay"> <!--overly div start-->
+                    <a href="C:\Users\Admin\Desktop\My Web Menia\images\project-4.jpg" target="_blank" class="common-heading">Project 2</a>
+
+                </div> <!--overly div end-->
+
+
+            </div>  <!--image-overlay div end-->
+
+            <div class="image-overlay p-btn--3"> <!--image-overlay div start-->
+
+                <img src="C:\Users\Admin\Desktop\My Web Menia\images\project-5.jpg" alt="This is Farhan Ali Image">
+
+                <div class="overlay"> <!--overly div start-->
+                    <a href="C:\Users\Admin\Desktop\My Web Menia\images\project-5.jpg" target="_blank" class="common-heading">Project 3</a>
+
+                </div> <!--overly div end-->
+
+
+            </div>  <!--image-overlay div end-->
+
+            <div class="image-overlay p-btn--4"> <!--image-overlay div start-->
+
+                <img src="C:\Users\Admin\Desktop\My Web Menia\images\project-6.jpg" alt="This is Farhan Ali Image">
+
+                <div class="overlay"> <!--overly div start-->
+                    <a href="C:\Users\Admin\Desktop\My Web Menia\images\project-6.jpg" target="_blank" class="common-heading">Project 4</a>
+
+                </div> <!--overly div end-->
+
+
+            </div>  <!--image-overlay div end-->
+
+            <div class="image-overlay p-btn--3"> <!--image-overlay div start-->
+
+                <img src="C:\Users\Admin\Desktop\My Web Menia\images\project-1.jpg" alt="This is Farhan Ali Image">
+
+                <div class="overlay"> <!--overly div start-->
+                    <a href="C:\Users\Admin\Desktop\My Web Menia\images\project-3.jpg" target="_blank" class="common-heading">Project 5</a>
+
+                </div> <!--overly div end-->
+
+
+            </div>  <!--image-overlay div end-->
+
+            <div class="image-overlay p-btn--4"> <!--image-overlay div start-->
+
+                <img src="C:\Users\Admin\Desktop\My Web Menia\images\project-6.jpg" alt="This is Farhan Ali Image">
+
+                <div class="overlay"> <!--overly div start-->
+                    <a href="C:\Users\Admin\Desktop\My Web Menia\images\farhanPic.jpg" target="_blank" class="common-heading ">Project 6</a>
+
+                </div> <!--overly div end-->
+
+
+            </div>  <!--image-overlay div end-->
+
+
+
+
+          </div> <!--portfolio-images div end-->
+
+
+
+        </section> <!--Portfolio Section End-->
+
+         <!--==============================================================
+                  
+                Our Work Counter Section Starting from Here... 
+    
+        ================================================================-->
+
+        <section class="section-work-data section"> <!--Counter Section Starting from Here-->
+
+            <div class="container grid-four-columns"> <!--Counter numbers starting from Here-->
+                
+                <div> 
+                   
+                    <h2 class="counter-numbers" data-number="2000">0+</h2>
+                    <p>Project Completed</p>
+                
+                </div>
+
+                <div> 
+                   
+                    <h2 class="counter-numbers" data-number="6000">0+</h2>
+                    <p>Cups of coffee</p>
+                
+                </div>
+
+                <div> 
+                   
+                    <h2 class="counter-numbers" data-number="5000">0+</h2>
+                    <p>Happy Clients</p>
+                
+                </div>
+
+                <div> 
+                   
+                    <h2 class="counter-numbers" data-number="6000">0+</h2>
+                    <p>Real Professionals</p>
+                
+                </div>
+
+
+
+            </div> <!--Counter numbers endded from Here-->
+
+        </section> <!--Counter Section Ended from Here-->
+
+
+         <!--==============================================================
+                  
+                Our Services Section Starting from Here....
+    
+        ================================================================-->
+
+
+        <section class="section services-section">
+
+            <div class="container services-container">
+
+                <h2 class="common-heading bio-heading-only ">Services Offering</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni doloremque impedit iure et illum exercitationem quo nemo minima vel nulla.</p>
+            
+            </div>
+
+            <!--Services card-->
+
+            <div class="cards-container grid-three-columns">
+                
+             <div class="service-card">
+
+                 <i class="fa-solid fa-desktop"></i>
+                <h3>Web Design</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, modi. Dicta, architecto.  Qui, voluptas velit! Quia hic fuga illum commodi a, doloremque totam.</p>
+
+             </div>
+
+             <div class="service-card">
+
+                <i class="fa-solid fa-splotch"></i>
+               <h3>Web developement</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, modi. Dicta, architecto.  Qui, voluptas velit! Quia hic fuga illum commodi a, doloremque totam.</p>
+
+            </div>
+
+            <div class="service-card">
+
+                <i class="fa-solid fa-mobile-screen-button"></i>
+               <h3>Android App</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, modi. Dicta, architecto.  Qui, voluptas velit! Quia hic fuga illum commodi a, doloremque totam.</p>
+
+            </div>
+
+            <div class="service-card">
+
+                <i class="fa-solid fa-desktop"></i>
+               <h3>Graphic Designing</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, modi. Dicta, architecto.  Qui, voluptas velit! Quia hic fuga illum commodi a, doloremque totam.</p>
+
+            </div>
+
+            <div class="service-card">
+
+                <i class="fa-solid fa-desktop"></i>
+               <h3>HTML</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, modi. Dicta, architecto.  Qui, voluptas velit! Quia hic fuga illum commodi a, doloremque totam.</p>
+
+            </div>
+
+            <div class="service-card">
+
+                <i class="fa-solid fa-desktop"></i>
+               <h3>CSS</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, modi. Dicta, architecto.  Qui, voluptas velit! Quia hic fuga illum commodi a, doloremque totam.</p>
+
+            </div>
+
+
+            </div> <!--Container div end-->
+
+        </section> <!--end of services section-->
+
+
+        <!--==============================================================
+                  
+                Our Testimonial Section Starting from Here....
+    
+        ================================================================-->
+
+        <section class="testimonial-section section">
+            
+            <div class="container">
+
+                <h2 class="common-heading bio-heading-only">Happy Clients</h2>
+
+            </div>
+              
+        <!-- Swiper -->
+          
+        <div class="swiper mySwiper">
+
+          <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+
+            <div class="swiper-client-msg">
+
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, ipsam. Perspiciatis necessitatibus, quia excepturi facere nesciunt autem esse optio ullam pariatur cumque totam nemo, voluptatibus nulla ab qui aliquid enim.</p>
+
+            </div>
+
+            <div class="swiper-clients-data grid-two-columns"> <!--swiper-clients-data div start-->
+                
+                <figure>
+                    <img src="C:\Users\Admin\Desktop\My Web Menia\images\farhanPic.jpg" alt="Client Review">
+                </figure>
+                <div class="client-data-details"> <!--clients-data-detials div start-->
+
+                    <p>Web design</p>
+
+                </div> <!--clients-data-detials div start-->
+
+            </div> <!--swiper-clients-data div end-->
+
+          </div> <!--swiper-slide div end-->
+
+          <div class="swiper-slide">
+
+            <div class="swiper-client-msg">
+
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, ipsam. Perspiciatis necessitatibus, quia excepturi facere nesciunt autem esse optio ullam pariatur cumque totam nemo, voluptatibus nulla ab qui aliquid enim.</p>
+
+            </div>
+
+            <div class="swiper-clients-data grid-two-columns"> <!--swiper-clients-data div start-->
+                
+                <figure>
+                    <img src="C:\Users\Admin\Desktop\My Web Menia\images\farhanPic.jpg" alt="Client Review">
+                </figure>
+                <div class="client-data-details"> <!--clients-data-detials div start-->
+
+                    <p>Web design</p>
+
+                </div> <!--clients-data-detials div start-->
+
+            </div> <!--swiper-clients-data div end-->
+
+          </div>
+          
+          <div class="swiper-slide">
+
+            <div class="swiper-client-msg">
+
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, ipsam. Perspiciatis necessitatibus, quia excepturi facere nesciunt autem esse optio ullam pariatur cumque totam nemo, voluptatibus nulla ab qui aliquid enim.</p>
+
+            </div>
+
+            <div class="swiper-clients-data grid-two-columns"> <!--swiper-clients-data div start-->
+                
+                <figure>
+                    <img src="C:\Users\Admin\Desktop\My Web Menia\images\farhanPic.jpg" alt="Client Review">
+                </figure>
+                <div class="client-data-details"> <!--clients-data-detials div start-->
+
+                    <p>Web design</p>
+
+                </div> <!--clients-data-detials div start-->
+
+            </div> <!--swiper-clients-data div end-->
+
+          </div>
+
+          <div class="swiper-slide">
+
+            <div class="swiper-client-msg">
+
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, ipsam. Perspiciatis necessitatibus, quia excepturi facere nesciunt autem esse optio ullam pariatur cumque totam nemo, voluptatibus nulla ab qui aliquid enim.</p>
+
+            </div>
+
+            <div class="swiper-clients-data grid-two-columns"> <!--swiper-clients-data div start-->
+                
+                <figure>
+                    <img src="C:\Users\Admin\Desktop\My Web Menia\images\farhanPic.jpg" alt="Client Review">
+                </figure>
+                <div class="client-data-details"> <!--clients-data-detials div start-->
+
+                    <p>Web design</p>
+
+                </div> <!--clients-data-detials div start-->
+
+            </div> <!--swiper-clients-data div end-->
+
+          </div>
+
+          <div class="swiper-slide">
+
+            <div class="swiper-client-msg">
+
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, ipsam. Perspiciatis necessitatibus, quia excepturi facere nesciunt autem esse optio ullam pariatur cumque totam nemo, voluptatibus nulla ab qui aliquid enim.</p>
+
+            </div>
+
+            <div class="swiper-clients-data grid-two-columns"> <!--swiper-clients-data div start-->
+                
+                <figure>
+                    <img src="C:\Users\Admin\Desktop\My Web Menia\images\farhanPic.jpg" alt="Client Review">
+                </figure>
+                <div class="client-data-details"> <!--clients-data-detials div start-->
+
+                    <p>Web design</p>
+
+                </div> <!--clients-data-detials div start-->
+
+            </div> <!--swiper-clients-data div end-->
+
+          </div>
+
+          <div class="swiper-slide">
+
+            <div class="swiper-client-msg">
+
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, ipsam. Perspiciatis necessitatibus, quia excepturi facere nesciunt autem esse optio ullam pariatur cumque totam nemo, voluptatibus nulla ab qui aliquid enim.</p>
+
+            </div>
+
+            <div class="swiper-clients-data grid-two-columns"> <!--swiper-clients-data div start-->
+                
+                <figure>
+                    <img src="C:\Users\Admin\Desktop\My Web Menia\images\farhanPic.jpg" alt="Client Review">
+                </figure>
+                <div class="client-data-details"> <!--clients-data-detials div start-->
+
+                    <p>Web design</p>
+
+                </div> <!--clients-data-detials div start-->
+
+            </div> <!--swiper-clients-data div end-->
+
+          </div> <!--swiper-slide-->
+          <div class="swiper-slide">
+
+            <div class="swiper-client-msg">
+
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, ipsam. Perspiciatis necessitatibus, quia excepturi facere nesciunt autem esse optio ullam pariatur cumque totam nemo, voluptatibus nulla ab qui aliquid enim.</p>
+
+            </div>
+
+            <div class="swiper-clients-data grid-two-columns"> <!--swiper-clients-data div start-->
+                
+                <figure>
+                    <img src="C:\Users\Admin\Desktop\My Web Menia\images\farhanPic.jpg" alt="Client Review">
+                </figure>
+                <div class="client-data-details"> <!--clients-data-detials div start-->
+
+                    <p>Web design</p>
+
+                </div> <!--clients-data-detials div start-->
+
+            </div> <!--swiper-clients-data div end-->
+
+          </div> <!--swiper-slide-->
+
+          <div class="swiper-slide">
+
+            <div class="swiper-client-msg">
+
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, ipsam. Perspiciatis necessitatibus, quia excepturi facere nesciunt autem esse optio ullam pariatur cumque totam nemo, voluptatibus nulla ab qui aliquid enim.</p>
+
+            </div>
+
+            <div class="swiper-clients-data grid-two-columns"> <!--swiper-clients-data div start-->
+                
+                <figure>
+                    <img src="C:\Users\Admin\Desktop\My Web Menia\images\farhanPic.jpg" alt="Client Review">
+                </figure>
+                <div class="client-data-details"> <!--clients-data-detials div start-->
+
+                    <p>Web design</p>
+
+                </div> <!--clients-data-detials div start-->
+
+            </div> <!--swiper-clients-data div end-->
+
+          </div> <!--swiper-slide-->
+
+          <div class="swiper-slide"> 
+
+            <div class="swiper-client-msg">
+
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, ipsam. Perspiciatis necessitatibus, quia excepturi facere nesciunt autem esse optio ullam pariatur cumque totam nemo, voluptatibus nulla ab qui aliquid enim.</p>
+
+            </div>
+
+            <div class="swiper-clients-data grid-two-columns"> <!--swiper-clients-data div start-->
+                
+                <figure>
+                    <img src="C:\Users\Admin\Desktop\My Web Menia\images\farhanPic.jpg" alt="Client Review">
+                </figure>
+                <div class="client-data-details"> <!--clients-data-detials div start-->
+
+                    <p>Web design</p>
+
+                </div> <!--clients-data-detials div start-->
+
+            </div> <!--swiper-clients-data div end-->
+
+          </div> 
+
+        </div>
+        <div class="swiper-pagination">
+
+            <div class="swiper-client-msg">
+
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, ipsam. Perspiciatis necessitatibus, quia excepturi facere nesciunt autem esse optio ullam pariatur cumque totam nemo, voluptatibus nulla ab qui aliquid enim.</p>
+
+            </div>
+
+            <div class="swiper-clients-data grid-two-columns"> <!--swiper-clients-data div start-->
+                
+                <figure>
+                    <img src="C:\Users\Admin\Desktop\My Web Menia\images\farhanPic.jpg" alt="Client Review">
+                </figure>
+                <div class="client-data-details"> <!--clients-data-detials div start-->
+
+                    <p>Web design</p>
+
+                </div> <!--clients-data-detials div start-->
+
+            </div> <!--swiper-clients-data div end-->
+
+        </div> 
+
+        </div> <!--swiper-slide-->
+    
+    </section>
+
+                    <!--freelancing-section Start-->
+
+    <section class="freelancing-section section"> <!--freelancing-section ended-->
+
+        <div class="overlay">
+
+            <div class="container">
+
+                <h2>I am <span>avaialible</span> for freelancing</h2>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis deserunt porro ab. Quidem blanditiis iste.</p>
+
+                <a href="#" class="btn">Hire Me</a>
+
+            </div>
+
+        </div> <!--Container ended-->
+
+    </section> <!--freelancing-section ended-->
+
+
+
+   <!--/*==============================================================
+                  
+                     Contact Us Section Starting from Here... 
+    
+    ============================================================== */ -->
+
+<section class="contact-us-section section"> <!-- Contact Us Section Starting from Here... -->
+
+    <div class="container"> <!--container div start-->
+
+        <h2 class="common-heading">Contact Us</h2>
+    
+    </div> <!--container div end-->
+
+    <div class="section-contact-main contact-container">
+
+        <form action="https://formsubmt.co/farhanalifani727@gmail.com">
+            <div class="grid-two-columns"> <!--form first 2 columns div-->
+                
+                <div>
+
+                <input type="text" name="username" id="username" placeholder="Your Name">
+                <label for="username"></label>
+
+                </div>
+
+                  
+                <div>
+
+                <input type="email" name="email" id="email" placeholder="Your Email">
+                <label for="email"></label>
+                
+                </div>
+          
+          </div> <!--form first 2 columns div end-->
+
+          <div>
+            <input type="text" name="subject" placeholder="Subject">
+          </div>
+
+          <div>
+            <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+            <label for="textarea"></label>
+          </div>
+
+          <div>
+            <input type="submit" name="submit" class="btn" id="submit" value="Send Message">
+          </div>
+
+        </form>
+
+    </div>
+
+  </section> <!-- Contact Us Section end from Here... -->
+
+  <?php
+
+  
+  
+
+  ?>
+
+     
+  <!--/*==============================================================
+                  
+                     Footer Section Starting from Here... 
+    
+================================================================= */ -->
+
+
+        <footer class="footer-section">
+
+            <div class="grid-four-columns container"> <!-- grid-four-columns-->
+
+                <div class="footer-about">
+
+                    <div>
+
+                    <h3>About</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit consequuntur iusto illum necessitatibus, possimus adipisci.</p>
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="footer-links">
+
+                    <h3>Links</h3>  <!-- section of services -->
+
+                    <ul>
+                        <li> <span><i class="fa-solid fa-arrow-right-long"></i></span><a href="">Home</a></li>
+                        <li> <span><i class="fa-solid fa-arrow-right-long"></i></span><a href="">Home</a></li>
+                        <li> <span><i class="fa-solid fa-arrow-right-long"></i></span><a href="">Home</a></li>
+                        <li> <span><i class="fa-solid fa-arrow-right-long"></i></span><a href="">Home</a></li>
+                        <li> <span><i class="fa-solid fa-arrow-right-long"></i></span><a href="">Home</a></li>
+                    </ul>
+
+                </div> <!-- section of services end-->
+
+
+                <div class="footer-services">
+
+                    <h3>Services</h3>  <!-- section of services -->
+
+                    <ul>
+                        <li> <span><i class="fa-solid fa-arrow-right-long"></i></span><a href="">Home</a></li>
+                        <li> <span><i class="fa-solid fa-arrow-right-long"></i></span><a href="">Home</a></li>
+                        <li> <span><i class="fa-solid fa-arrow-right-long"></i></span><a href="">Home</a></li>
+                        <li> <span><i class="fa-solid fa-arrow-right-long"></i></span><a href="">Home</a></li>
+                        <li> <span><i class="fa-solid fa-arrow-right-long"></i></span><a href="">Home</a></li>
+                    </ul>
+
+                </div> <!-- section of services end-->
+
+
+                <div class="footer-questions"> <!-- section of address start-->
+
+
+                    <h3>Have a Questions</h3>
+
+                    <address>
+                       
+                     <div>
+                            <p>
+                                <span><i class="fa-solid fa-house-user"></i></span>
+                                Sialkot, Pakistan.
+                            </p>
+                        </div>
+
+                        <div>
+                            <p>
+                                <span><i class="fa-solid fa-envelope"></i></span>
+                                <a href="mailto:farhanalifani727@gmail.com">farhanalifani727@gmail.com</a>
+                            </p>
+                        </div>
+
+                        <div>
+                            <p>
+                                <span><i class="fa-solid fa-phone-flip"></i></span>
+                                <a href="tel:+923078907606"> +92307 89076 06</a>
+                            </p>
+                        </div>
+
+                    </address>
+
+                </div> <!-- section of address end-->
+
+
+
+             </div> <!-- grid-four-columns end-->
+
+        
+             <!-- social icons in footer start section-->
+
+             <div class="footer-social-icons container"> <!-- social icons in footer start section-->
+
+                <div class="icons">
+
+                    <a href="" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+
+                </div> <!--icons div end-->
+
+                <div class="footer-credits">
+
+                    <p>@Copyright by Farhan Ali ❤❤❤ .</p>
+
+                </div>
+                
+             </div> <!-- social icons in div container footer section ended-->
+             
+       
+        </footer>
+
+
+        
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+     </body>
+
+</html>
