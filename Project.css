@@ -1,0 +1,818 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Work+Sans:wght@400;500&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins',sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/*css varibales creation and these are very useful to create */
+:root{
+
+    --heading-color:rgb(0,10,45);
+    --para-color:#777;
+    --para-tint:#e4e4e4;
+    --white:#fff;
+    --dark-color:#212529;
+    --helper:rgb(62, 80, 241);
+    --helper-tint:#f3f4ff;
+    --bg:rgb(215, 215, 236);
+    --gradient:liner-gradient(0deg,rgb(61, 35, 204) 0%, rgb(39, 126, 240) 100%);
+    --gradient-support: -webkit-linear-gradient(
+        0deg,
+        rgb(97, 23, 214) 0%, 
+        rgb(81, 130, 236) 100%
+    );
+
+    --shadow: 0px 0px 20px 0px rgb(132 144 255 / 20%);
+    --shadow-support: 0px 0px 20px 0px rgb(132 144 255 / 30%);
+}
+
+html {
+
+    font-size: 62.5%;
+}
+h1,h2,h3,h4 {
+     
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+h1 {
+    color: var(--heading-color);
+    font-size: 6rem;
+    font-weight: 600;
+}
+h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+p {
+    color: var(--para-color);
+    line-height: 1.6;
+    font-size: 1.7rem;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+header{
+    background-color:var(--bg);
+}
+.logo h1 {
+    
+    margin-left: 20px;
+}
+.header-section {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.navigation-list {
+    display: flex;
+    gap: 4.8rem;
+}
+nav{
+    
+    margin-left: auto;
+}
+.navigation-list li:last-child{
+    margin-right: 20px;
+}
+.navigation-list li a {
+
+    font-size: 1.5rem;
+    font-weight: 700;
+    color:var(--dark-color);
+    transition: color .5s linear;
+    /*font-family: 'Poppins', sans-serif;*/
+}
+.navigation-list li a{
+
+    position: relative;
+}
+.navigation-list li a::before{
+
+    content:"";
+    position: absolute;
+    top: 100%; /* top:1.7rem also works like that */
+    left: 0;
+    background-color: #976811;
+    height: 2.5px;
+    width:0; /* on the hover we want to show width as 100% , so write this in hover effect...awesome ..hahaha */
+    transition:all .7s linear;
+    
+}
+.navigation-list li a:hover::before{
+    width: 100%;
+    background-color: #212529;
+}
+
+.navbar-link:hover {
+
+    color: var(--helper);
+}
+
+/*Hero Section Styling */
+.section {
+    padding: 9rem 0px;
+    margin:0 auto;
+}
+
+/*pre-defined code for re-usability and useful to reduce same code here for 2 columns*/
+.grid-two-columns { 
+    display: grid;
+    gap: 9rem;
+    grid-template-columns:repeat(2,1fr);
+    align-items: center;
+    justify-content: center;
+}
+
+/*pre-defined code for re-usability and useful to reduce same code here for 3 columns*/
+.grid-three-columns{
+
+    display: grid;
+    gap: 9rem;
+    grid-template-columns:repeat(3,1fr);
+    align-items: center;
+    justify-content: center;
+
+}
+
+/*pre-defined code for re-usability and useful to reduce same code here for 4 columns*/
+.grid-four-columns{
+
+    display: grid;
+    gap: 9rem;
+    grid-template-columns:repeat(4,1fr);
+    align-items: center;
+    justify-content: center;
+
+}
+.left-hero-content {
+
+    margin-left: 13rem;
+    
+
+}
+.left-hero-content h4 {
+    font-weight: 1000;
+    margin-left: 3px;
+    font-size: 2rem;
+    color: var(--helper);
+}
+.left-hero-content h1 {
+    
+    margin-bottom: 2rem;
+    font-weight: 700;
+    font-size: 6.4rem;
+}
+.left-hero-content p {
+   margin-bottom: 1.5rem;
+   max-width: 600px;
+   color: var(--para-color);
+
+}
+.hero-image img {
+    max-width: 100%;
+}
+/* .hero-section {
+
+    display: flex;
+    background-color: var(--bg);
+    align-items: center;
+    justify-content:center;
+}
+.left-hero-content {
+    margin-left: 200px;
+    margin-right:70px;
+}
+.hero-image {
+    margin-right: 150px;
+} */
+
+
+/*pre-defined code for re-usability and useful to reduce same code here for creating buttons same nature*/
+.btn {
+    
+    background-image:var(--gradient-support);
+    padding: 1.6rem 3.2rem;
+    border: none;
+    color:var(--helper-tint);
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+.btn:hover {
+    box-shadow:0px 0px 50px 5px rgba(238, 11, 11, 0.3);
+}
+.bio-data {
+
+    background-color: var(--white);
+}
+
+/* <!--==============================================================
+                  
+                 Bio Data section and about us section
+
+  ================================================================--> */
+
+.left-side-image img{
+
+    max-width: 80%;
+    box-shadow: -2rem -2rem 0 0 var(--helper);
+}
+.left-side-image{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right-side-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*pre-defined code for re-usability and useful to reduce same code here for headings purpose*/
+.common-heading {
+    font-size: 4.8rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    position: relative;     /* why to remove this property our blue line goes to right side. i want some guide here */ 
+}
+.common-heading::before{
+    content:"";
+    position:absolute;
+    top: 110%;
+    left: 0;
+    height:1.5rem ;
+    width:1.5rem ;
+    background-color: var(--helper);
+    border-radius: 1.5rem;
+}
+.common-heading::after{
+    content:"";
+    position:absolute;
+    top: 122%;
+    left: 1.5rem;
+    min-width: 200px;
+    height: 0.3rem;
+    background-color: var(--helper);
+}
+.bio-data-stats {
+
+    display: flex;
+    padding: 6.4rem 0px;
+    flex-direction: column;
+    gap: 5rem;
+
+}
+.bio-btn{
+    margin-top:6.4rem;
+}
+.bio-progress-bar {
+
+    width: 90%;
+    height: 0.8rem;
+    background-color: var(--para-tint);
+    border-radius: 10rem;
+    position: relative;
+}
+.bio-stats h3 {
+    margin-bottom: 10px;
+}
+.bio-progress-bar::before{
+
+    content: "";
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: inherit;
+    background-image:var(--gradient-support);
+    border-radius: 10rem;
+
+}
+.bio-progress-1{
+    width: 80%;
+}
+
+.bio-progress-2::before{
+    width: 90%;
+}
+.bio-progress-3::before{
+    width: 60%;
+}
+.bio-progress-4::before{
+    width: 50%;
+}
+.bio-progress-5::before{
+    width: 40%;
+}
+.bio-progress-bar span{
+    position: absolute;
+    top:1.8rem;
+    width: 4rem;
+    height: 2rem;
+    background: var(--helper);
+    color:var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+}
+.bio-progress-1 span{
+    left: 76%;
+}
+.bio-progress-2 span{
+    left: 86%;
+}
+.bio-progress-3 span{
+    left: 56% ;
+}
+.bio-progress-4 span{
+    left: 46% ;
+}
+.bio-progress-5 span{
+    left: 36% ;
+}
+
+/* creation of carrat/
+trick is that we have to create *
+four (4) boxes and them border on each side
+and then give width and height zero (0) that will cause append them with each other.
+and we have to show only top side of box and other sides (bottom, left, right) will be transparent*/
+
+.bio-progress-bar span::after{
+
+     content:"";
+     position: absolute;
+     width: 0px;
+     height: 0px;
+     border: 0.8rem solid var(--helper);
+     border-color:transparent ;
+     border-bottom-color:var(--helper);
+     top: -1.5rem;
+    
+}
+.bio-heading-only{
+
+    margin-bottom:3rem;
+}
+
+/*==============================================================
+                  
+                     Portfolio Section Starting from Here... 
+    
+================================================================= */
+
+.portfolio-section {
+    background-color: var(--bg);
+    transition: all 0.7s linear;
+}
+.portfolio-section p {
+    max-width: 60rem;
+}
+.p-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin-top: 6.4rem;
+}
+.portfolio-images {
+    gap:2.5rem;
+    margin-top: 6.4rem;
+    width: 100%;
+}
+.portfolio-images img {
+    width: 100%;
+    height: 400px;
+    object-fit:cover;
+    border-radius: 1rem;
+    
+}
+.portfolio-section .common-heading {
+    color: var(--dark-color);
+}
+.image-overlay {
+    position: relative;
+     overflow: hidden;
+}
+.image-overlay .overlay {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: var(--gradient-support); 
+    opacity: 0; /*itwill show your origional image*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(100%);
+    transition: all 0.9s linear;
+    border-radius: 1rem;
+}
+.image-overlay:hover > .overlay {
+
+    transform: translateY(0%);
+    opacity: 0.8;
+    cursor: pointer;
+
+}
+.image-overlay .common-heading {
+    color: var(--white);
+    margin: 0;
+    text-decoration: none;
+}
+.p-btn:hover {
+    transform: translateY(-1rem);
+}
+
+
+
+/*==============================================================
+                  
+                     Counter Numbering Section Starting from Here... 
+    
+================================================================= */
+
+
+.section-work-data{
+
+    background-image: var(--gradient-support);
+    text-align: center;
+    transition: all 0.7s linear;
+    color: var(--white);
+}
+.counter-numbers {
+    font-size: 3rem;
+}
+.section-work-data p {
+    color: var(--white);
+    text-transform: capitalize;
+}
+
+
+/*==============================================================
+                  
+                     Services Section Starting from Here... 
+    
+================================================================= */
+
+.services-section {
+    transition: all 0.7s linear;
+}
+.services-section p {
+    max-width: 60rem;
+}
+.cards-container {
+    margin-top: 10rem;
+    gap: 10rem;
+   
+}
+.cards-container p {
+    text-align: justify;
+}
+.service-card {
+    text-align: center;
+    box-shadow: var(--shadow-support);
+    border-radius: 5px;
+    padding: 6rem 4rem;
+    transition: all 0.7s linear;
+}
+.service-card h3 {
+    text-transform: uppercase;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+.service-card:hover {
+    transform: translateY(-3rem);
+}
+.service-card i {
+    width: 8rem;
+    height: 8rem;
+    background-color:rgb(49, 48, 48);
+    border-radius: 100% 0% 100% 0% / 0% 45% 55% 100% ;
+    display: inline-block;
+    padding: 2.5rem 2rem;
+    color: var(--heading-color);
+    position: relative;
+    animation: water-wave 3s linear infinite;
+}
+@keyframes water-wave {
+
+    0% {
+
+        border-radius: 10% 0% 100% 0% / 0% 45% 55% 10% ;
+    }
+    50% {
+
+        border-radius: 13% 100% 10% 50% / 10% 45% 48% 10% ;
+    }
+    100% {
+        
+        border-radius: 10% 50% 23% 0% / 0% 45% 55% 10% ;
+    }
+
+    
+}
+
+         /* 
+         <--==============================================================
+                  
+                  Our Services Section Starting from Here....
+
+        ================================================================-->
+      */
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+        margin-top: 9rem;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+      }
+    .swiper-client-msg {
+
+        padding: 5rem 8rem;
+        background-color: var(--white);
+        border-radius: 1rem;
+        text-align: left;
+        box-shadow: var(--shadow-support);
+        position: relative;
+    }
+.swiper-slide img {
+
+        max-width: 10rem;
+        height: 10rem;
+        border-radius: 50%;
+        border: .5rem solid var(--helper-tint);
+    }
+
+    .swiper-client-msg::before {
+
+        content:"";
+        position: absolute;
+        bottom: -10rem;
+        left: 50%;
+        transform: translateX(-50%);
+        border: 5rem solid var(--white);
+        border-color: transparent;
+        border-top-color: var(--helper-tint);
+    }
+    
+    .swiper-clients-data {
+
+        align-items: center;
+        margin-top: 1.3rem;
+        gap: 3.2rem;
+    }
+   
+    .swiper-client-msg p::before{
+
+        content: "\f10d";
+        position: absolute;
+        top: 0;
+        left: 2rem;
+        font-size: 5rem;
+        color: #ced3ff;
+        font-weight: 900;
+        font-family: "Font Awesome 6 Free";
+
+    }
+
+    .swiper-client-msg p::after{
+
+        content: "\f10e";
+        position: absolute;
+        bottom: 0;
+        right: 3rem;
+        font-size: 5rem;
+        color: #ced3ff;
+        font-weight: 900;
+        font-family: "Font Awesome 6 Free";
+}
+
+.testimonial-section {
+    background-color: var(--white);
+}
+
+
+/*==============================================================
+                  
+                     Freelancing Section Starting from Here... 
+    
+================================================================= */
+
+.freelancing-section {
+
+    background-image: url('\service.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    position: relative;
+    transition: all 0.7s linear;
+    height: 300px;
+}
+.freelancing-section .overlay {
+
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--helper);
+    opacity: 0.8;
+}
+.freelancing-section .container {
+    position: relative;
+}
+.freelancing-section h2 {
+    font-size: 5.4rem;
+}
+.freelancing-section span {
+    color: rgb(12, 212, 12);
+}
+.freelancing-section h2, .freelancing-section p {
+    color: var(--white);
+}
+.freelancing-section a {
+    background: var(--white);
+    color: var(--helper);
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+}
+.freelancing-section .container {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 3rem;
+}
+
+
+/*==============================================================
+                  
+                     Contact Us Section Starting from Here... 
+    
+================================================================= */
+
+
+.contact-us-section .common-heading {
+    margin-bottom: 5rem;
+}
+
+.contact-us-section{
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: 9rem;
+    transition: all 0.7s linear;   
+}
+.section-contact-main form {
+
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.section-contact-main input , .section-contact-main textarea {
+
+    padding: 1.3rem 2rem;
+    border: 0.3px solid #c9c9c9;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    font-family: "Work Sans";
+    width: 100%;
+    outline-style: none;
+
+}
+.section-contact-main input[type="submit"] {
+
+    width: 30%;
+    border: none;
+}
+.section-contact-main .grid-two-columns {
+
+    gap: 2rem;
+}
+
+
+/*==============================================================
+                  
+                     Footer Section Starting from Here... 
+    
+================================================================= */
+
+.footer-section {
+    background-color: var(--heading-color);
+}
+
+.footer-section .grid-four-columns {
+
+    max-width:  900px;
+    margin: 0 auto;
+    margin-top: 9rem;
+    margin-bottom: 9rem;
+    transition: all 0.7s linear;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items:center;
+}
+.footer-section h3 {
+
+    color: var(--white);
+    margin-bottom: 4rem;
+}
+.footer-section p{
+
+    color: #adadad;
+}
+.footer-links ul , .footer-services ul, .footer-questions address {
+    
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    justify-content: center;
+      
+}
+.footer-links li , .footer-links a, .footer-services li, .footer-services a {
+    
+    font-size: 1rem;
+    color: #adadad;
+    text-transform: capitalize;
+}
+.footer-about h3, .footer-questions h3 {
+    margin-top: 1rem;
+}
+.footer-section i {
+    margin-right: 5px;
+}
+.footer-questions p, .footer-questions p a {
+    color: #adadad;
+    font-style: normal;
+}
+
+.footer-social-icons {
+    margin: 5rem 0;
+    text-align: center;
+    color: #adadad;
+}
+.footer-social-icons a i {
+    
+    font-size: 3rem;
+    padding: 1rem;
+    display:inline-block;
+    animation: water-wave 3s linear infinite;
+    position: relative;
+    color: var(--bg);
+
+
+}
+.footer-social-icons .footer-credits {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding-bottom: 1rem;
+}
+.footer-section a:hover {
+    color: var(--white);
+}
