@@ -13,7 +13,10 @@
         },
       });
 
-      const counterNum = document.querySelectorAll(".counter-numbers");
+      
+
+/* comments only
+   const counterNum = document.querySelectorAll(".counter-numbers");
 
       const speed = 200;
 
@@ -28,5 +31,27 @@
 
         updateNumber();
 
-      });
+      });    /*
+
+
+// creatinga an element using JavaScript
+
+//where to add it or so select first of all this element
+
+/* const footerElemnt = document.querySelector(".footer-section");
+
+const ScroolElement = document.createElement("div");
+ScroolElement.classList.add("scrool-top-element");
+ScroolElement.innerHTML =  '<i class="fa-solid fa-arrow-right-long"></i>';
+
+footerElemnt.after(ScroolElement); */
+
+
+function scroolTop()
+{
+  const heroElement = document.getElementById("hero-section");
+  heroElement.scrollIntoView({behavior:"smooth"});
+}
+
+
 
