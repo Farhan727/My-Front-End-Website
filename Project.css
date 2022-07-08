@@ -816,3 +816,33 @@ and we have to show only top side of box and other sides (bottom, left, right) w
 .footer-section a:hover {
     color: var(--white);
 }
+
+
+/*==============================================================
+                  
+                    Scrool Bar Section Styling Starting from Here... 
+    
+================================================================= */
+
+.scrool-bar-icon {
+
+    position: fixed;
+    right: 2%;
+    bottom: 5%;
+    z-index: 1;
+    
+}
+.scrool-bar-icon i {
+
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--helper);
+    display: inline-block;
+    color: var(--white);
+    font-size: 2rem;
+    padding: 12px;
+    animation: water-wave 3s linear;
+    cursor: pointer;
+    transition: all 0.7s linear;
+}
+
